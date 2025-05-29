@@ -1,16 +1,12 @@
-# stitch_id
+# Flutter Basic App 🌟
+This project is a **basic Flutter app** built by following [this tutorial](https://youtu.be/c063ddhWafo?si=-Wn6988vNvfAp3H6) by Net Ninja. 
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ ## 💡 Purpose
+- This app is purely for **practice and learning** Flutter fundamentals.
+- It demonstrates the core concepts of Flutter such as:
+  - Stateless widgets
+  - Layout widgets like `Row`, `Column`, `Container`, `Center`
+  - Styling text and buttons
+  - Using assets (images and fonts)
+  - Handling button clicks
+  - Material design basics
