@@ -6,8 +6,17 @@ void main (){
   ));
 }
 
-class authCard extends StatelessWidget {
+class authCard extends StatefulWidget {
   const authCard({super.key});
+
+  @override
+  State<authCard> createState() => _authCardState();
+}
+
+class _authCardState extends State<authCard> {
+  //States that change overtime
+  int level = 0;
+
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +36,15 @@ class authCard extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.indigo,
         elevation: 0,
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          setState(() {
+            level +=1;
+          });
+        },
+        child: Icon(Icons.add, color: Colors.white),
+        backgroundColor: Colors.indigo[400],
       ),
       body: Padding(
         padding: EdgeInsets.fromLTRB(40, 30, 20, 0),
@@ -72,7 +90,7 @@ class authCard extends StatelessWidget {
             ),
             SizedBox(height: 5),   //Create an empty box for us
             Text(
-              '10',
+              '$level',
               style: TextStyle(
                 color: Colors.purple[800],
                 letterSpacing: 2,
